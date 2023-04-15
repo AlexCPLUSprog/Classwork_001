@@ -64,7 +64,7 @@ namespace Classwork_001
         static void Main(string[] args)
         {
             // Задание 3
-           /* Console.WriteLine("Задание 3.");
+            Console.WriteLine("Задание 3.");
        
                 if (args.Length > 0)
                 {
@@ -111,7 +111,7 @@ namespace Classwork_001
             Console.WriteLine("\nЗадание 6.");
             Tuple<int, int> result = GetTwoNumbers();
             Console.WriteLine(result.Item1); 
-            Console.WriteLine(result.Item2);*/
+            Console.WriteLine(result.Item2);
 
             // Задание 7
             Console.WriteLine("\nЗадание 7.\nВведите имя:");
