@@ -64,7 +64,7 @@ namespace Classwork_001
         static void Main(string[] args)
         {
             // Задание 3
-            Console.WriteLine("Задание 3.");
+           /* Console.WriteLine("Задание 3.");
        
                 if (args.Length > 0)
                 {
@@ -111,12 +111,50 @@ namespace Classwork_001
             Console.WriteLine("\nЗадание 6.");
             Tuple<int, int> result = GetTwoNumbers();
             Console.WriteLine(result.Item1); 
-            Console.WriteLine(result.Item2);
+            Console.WriteLine(result.Item2);*/
 
             // Задание 7
+            Console.WriteLine("\nЗадание 7.\nВведите имя:");
+
+            string name = Console.ReadLine();
             
+            bool b = true;  // понимаю, что создание переменных ради цикла не есть хорошо, наверное, но я пока до другого додуматься не смог)
+            do
+            {
+                try
+                {
+                    Console.WriteLine("Введите возраст:");
+                    int age = int.Parse(Console.ReadLine());
+                    b = false;
+                }
+                catch (Exception)
+                {
 
+                    Console.WriteLine("Некорректный ввод!");
+                }
+               
 
+            } while (b);        
+
+            bool a = true;
+            string seasons;
+            do
+            {
+                Console.WriteLine("Введите время года(spring, summer, autumn, winter):");
+                seasons = Console.ReadLine();
+                switch (seasons)
+                {
+                    case "spring": Console.WriteLine("Весна"); a = false ; break;
+                    case "summer": Console.WriteLine("Лето"); a = false; break;
+                    case "autumn": Console.WriteLine("Осень"); a = false; break;
+                    case "winter": Console.WriteLine("Зима"); a = false; break;
+                    default:
+                        Console.WriteLine("Некорректный ввод!");
+                        break;
+                }
+            } while (a);
+            
+           // Console.WriteLine("Имя: " + name + ", возраст: " + age + ", время года: " + seasons); Здесь закомментировал, т.к не знаю как из try catch вывести переменную age
 
         }
     }
