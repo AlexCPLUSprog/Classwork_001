@@ -9,6 +9,7 @@ namespace Classwork_001
 {
     internal class Program
     {
+        // Задание 5
         static List<Person> Ask_N_Times(int n)
         {
             var ans = new List<Person>();
@@ -60,16 +61,26 @@ namespace Classwork_001
             return Tuple.Create(firstNum, secondNum);
         }
 
-
-
-
         static void Main(string[] args)
         {
             // Задание 3
-
-
-
-
+            Console.WriteLine("Задание 3.");
+       
+                if (args.Length > 0)
+                {
+                    int FarDG = int.Parse(args[0]);
+                    float CelsDG = ((float)(FarDG - 32) / 9) * 5;
+                    Console.WriteLine("Градусов по Фарингейту: " + FarDG + ", градусов по Цельсию: " + CelsDG);
+                }
+                else
+                {
+                    Console.WriteLine("Нет аргументов командной строки!");                    
+                    Console.WriteLine("Введите число: ");
+                    int FarDG = int.Parse(Console.ReadLine());
+                    float CelsDG = ((float)(FarDG - 32) / 9) * 5;
+                    Console.WriteLine("Градусов по Фарингейту: " + FarDG + ", градусов по Цельсию: " + CelsDG);
+                }
+                
             // Задание 4
             Console.WriteLine("\nЗадание 4.");
             int j = 0;
@@ -100,9 +111,11 @@ namespace Classwork_001
             Console.WriteLine("\nЗадание 6.");
             Tuple<int, int> result = GetTwoNumbers();
             Console.WriteLine(result.Item1); 
-            Console.WriteLine(result.Item2); 
+            Console.WriteLine(result.Item2);
 
             // Задание 7
+            
+
 
 
         }
